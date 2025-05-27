@@ -19,7 +19,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-df = pd.read_csv(r'C:\Users\conor\Downloads\student_habits_performance.csv') #filepath to dataset 
+df = pd.read_csv('data/data.csv') #filepath to dataset 
 
 # Display the first few instances of the dataset for inspection and exploration
 print(df.head())
