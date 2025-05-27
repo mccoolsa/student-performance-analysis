@@ -323,13 +323,19 @@ model_rf = Pipeline([
 # Train the model again
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+# Fit model
 model_rf.fit(X_train, y_train)
+
+# Predict
 y_pred_rf = model_rf.predict(X_test)
 
+# Evaluate
+mse_rf = mean_squared_error(y_test, y_pred_rf)
+r2_rf = r2_score(y_test, y_pred_rf)
+
+# Print
 print(f"Random Forest - MSE: {mse_rf:.5f}")
 print(f"Random Forest - R²: {r2_rf:.5f}")
-# MSE: 45.24244109999998
-# R²: 0.8235674429862672
 
 # %%
 from sklearn.model_selection import GridSearchCV
@@ -425,10 +431,12 @@ plt.show()
 # %%
 # Residual plot to visualize prediction errors
 residuals = y_test - y_pred_best
-plt.scatter(y_test, residuals, alpha=0.6)
+plt.scatter(y_test, residuals, alpha=0.75, color='purple')
 plt.axhline(0, color='red', linestyle='--')
 plt.xlabel("Actual Exam Score")
 plt.ylabel("Residual (Actual - Predicted)")
-plt.title("Residual Plot")
+plt.title("Residual Plot to Evaluate Model Performance")
+plt.grid(True)
+plt.tight_layout()
 plt.show()
 # %%
