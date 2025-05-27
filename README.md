@@ -18,8 +18,9 @@ https://www.kaggle.com/code/jayaantanaath/student-habits-vs-academic-performance
 
 ## Files
 
-- `stuaca.py`: Full end-to-end Python script
-- `requirements.txt`: Required packages
+- `stuaca.py`: python script
+- `requirements.txt`: required packages
+- `stuaca_notebook.ipynb`: jupyter notebook file (ignore warnings)
 
 - Clone this and install dependencies:
 ```bash
