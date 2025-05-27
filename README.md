@@ -5,7 +5,7 @@
 This project explores how lifestyle habits (like study time, sleep, diet, and social media usage) influence students' academic performance using regression and explainable AI (SHAP).
 
 Note: First upload from python to ipynb for github visualization, definitely could have done a better job with the plots / inputting comments below visuals rather into the code.
-Update your packages!
+Update packages accordingly.
 
 https://www.kaggle.com/code/jayaantanaath/student-habits-vs-academic-performance-ml-90
 
