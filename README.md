@@ -10,6 +10,12 @@ Update packages accordingly.
 
 https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance
 
+Perhaps more exploration was needed for the ML model - RF provided decent but should be compared to others such as 
+
+- Linear Regression (Features are not highly correlated or high-dimensional here)
+- Ridge (L2 Regularization) - May help here with minimizing outliers (alpha 1.0)
+- Lasso (L1 Regularization) - Make some values absolutes to enable enhanced feature selection (alpha 0.1)
+
 ## Sources
 
 This dataset is synthetic, created using Python libraries (numpy, pandas) with random distributions and logical dependencies to mimic real-life scenarios.
