@@ -10,6 +10,10 @@ Update packages accordingly.
 
 https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance
 
+## Sources
+
+This dataset is synthetic, created using Python libraries (numpy, pandas) with random distributions and logical dependencies to mimic real-life scenarios.
+
 ## Features
 
 - Exploratory data analysis
